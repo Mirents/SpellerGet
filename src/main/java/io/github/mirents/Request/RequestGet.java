@@ -18,7 +18,8 @@ public class RequestGet {
         CloseableHttpResponse resp = null;
         try {
             CloseableHttpClient httpClient = HttpClients.createDefault();
-            HttpGet httpGet = new HttpGet(sURL + "/checkText?text=Апасный");
+            HttpGet httpGet = new HttpGet(sURL + 
+                    "/checkText?text=стинография+виршина");
             
             resp = httpClient.execute(httpGet);
             
